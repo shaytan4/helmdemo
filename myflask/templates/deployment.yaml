@@ -45,6 +45,17 @@ spec:
             httpGet:
               path: /
               port: http
+          env:
+          - name: "REDIS_DB"
+            valueFrom:
+              secretKeyRef:
+                key: rdshost
+                name: {{ .Release.Name }}-redis-auth
+          - name: "REDIS_PASSWORD"
+            valueFrom:
+              secretKeyRef:
+                key: rdspasswd
+                name: {{ .Release.Name }}-redis-auth
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
