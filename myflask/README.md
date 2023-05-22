@@ -42,6 +42,8 @@ The following table lists the configurable parameters of the Myflask chart and t
 | `nodeSelector` |  | `{}` |
 | `tolerations` |  | `[]` |
 | `affinity` |  | `{}` |
+| `redis_host` |  | `"myredis-master.myredis.svc.cluster.local"` |
+| `redis_passwd` |  | `"parolparol"` |
 
 
 
