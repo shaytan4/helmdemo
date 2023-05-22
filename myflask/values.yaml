@@ -6,7 +6,8 @@ replicaCount: 1
 
 image:
   repository: shaytan4/myflask
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
+  #  IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "1.0.0"
 
