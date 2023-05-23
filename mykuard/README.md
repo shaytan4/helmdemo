@@ -37,8 +37,9 @@ The following table lists the configurable parameters of the Mykuard chart and t
 | `resources.requests.memory` |  | `"128Mi"` |
 | `autoscaling.enabled` |  | `false` |
 | `autoscaling.minReplicas` |  | `1` |
-| `autoscaling.maxReplicas` |  | `100` |
+| `autoscaling.maxReplicas` |  | `2` |
 | `autoscaling.targetCPUUtilizationPercentage` |  | `80` |
+| `autoscaling.targetMemoryUtilizationPercentage` |  | `80` |
 | `nodeSelector` |  | `{}` |
 | `tolerations` |  | `[]` |
 | `affinity` |  | `{}` |
